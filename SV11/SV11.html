@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кола Дэвэ Николаевна - Визитка</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #2e2e2e;
+            color: #f0f0f0;
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.6;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -2;
+        }
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 128, 0, 0.5);
+            z-index: -1;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            animation: slideDown 1s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #a3d9a5;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            color: #a3d9a5;
+        }
+        section {
+            margin: 40px 0;
+        }
+        h2 {
+            color: #a3d9a5;
+            border-bottom: 1px solid #a3d9a5;
+            padding-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            line-height: 1.8;
+        }
+        .skills, .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill, .contact {
+            flex: 0 0 48%;
+            background-color: #3e3e3e;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            animation: popUp 1s ease-in-out;
+            text-align: center;
+        }
+        .contact a {
+            color: #a3d9a5;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .contact p {
+            text-align: left;
+        }
+        .photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .photo p {
+            margin-top: 10px;
+            color: #a3d9a5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #a3d9a5;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes popUp {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Кола Дэвэ Николаевна</h1>
+            <p>Лапки у меня нежные, но коготки острые!</p>
+        </header>
+        <section>
+            <h2>Обо мне</h2>
+            <p>Я домашняя кошка, обожающая уютные места и ласку. У меня мягкие лапки и острые коготки, что делает меня отличным компаньоном и защитником. Мне нравится проводить время с моим хозяином и лучшим другом Аяксом.</p>
+        </section>
+        <section>
+            <h2>Навыки</h2>
+            <div class="skills">
+                <div class="skill">Мурлыканье</div>
+                <div class="skill">Ловля мышей</div>
+                <div class="skill">Лазание по деревьям</div>
+                <div class="skill">Обнимашки</div>
+                <div class="skill">Сон на солнце</div>
+                <div class="skill">Игры с клубками</div>
+            </div>
+        </section>
+        <section>
+            <h2>Контакты</h2>
+            <div class="contacts">
+                <div class="contact">
+                    <strong>Телефон моего человеческого хозяина:</strong>
+                    <a href="tel:+79149607107">+7 914 960 7107</a>
+                    <p>Ему нужны деньги для покупки мне автоматической кормушки и поилки. Я буду очень довольна. Мой хозяин говорит, что эти донаты помогут в покупке моих мяуштучек. Всех мурмяу мрмрмр.</p>
+                </div>
+                <div class="contact">
+                    <strong>YouTube канал моего мясного хозяина:</strong>
+                    <a href="https://www.youtube.com/channel/UCrDMdMusMxaksdqKddHRIaQ" target="_blank">Посетить YouTube канал</a>
+                </div>
+                <div class="contact">
+                    <strong>Steam аккаунт моего мясного хозяина:</strong>
+                    <a href="https://steamcommunity.com/tradeoffer/new/?partner=1003305729&token=i_GRaqGs" target="_blank">Посетить Steam аккаунт</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Фотографии</h2>
+            <div class="photos">
+                <div class="photo">
+                    <img src="photo1.jpg" alt="Кола с хозяином">
+                    <p>Я с моим хозяином.</p>
+                </div>
+                <div class="photo">
+                    <img src="photo2.jpg" alt="Кола с Аяксом">
+                    <p>Я уже взрослая с моим лучшим другом и защитником Аяксом.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Кола Дэвэ Николаевна. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
